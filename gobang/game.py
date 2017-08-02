@@ -24,7 +24,7 @@ class Game:
         self._finished = False
 
     def make_move(self, color: Color, row: int, col: int):
-        assert self._board[row][col] == NONE
+        # assert self._board[row][col] == NONE
         self._board[row][col] = color
         self._history.append((row, col))
         self._check_finished()
